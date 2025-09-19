@@ -1,0 +1,42 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# === Virtual environments ===
+.venv/
+env/
+venv/
+
+# === Editor/IDE ===
+.vscode/
+.idea/
+
+# === Alembic cache ===
+alembic/__pycache__/
+alembic/versions/__pycache__/
+
+# === Environment & secrets ===
+.env
+.env.*
+
+# === Docker ===
+*.pid
+*.seed
+*.bak
+docker-compose.override.yml
+docker-compose.override.*.yml
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === Tests ===
+.coverage
+htmlcov/
+.pytest_cache/
