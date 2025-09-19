@@ -40,3 +40,11 @@ Thumbs.db
 .coverage
 htmlcov/
 .pytest_cache/
+
+# creează .gitignore minim
+printf ".venv/\n__pycache__/\n*.pyc\n.env\n.env.*\n.vscode/\n.idea/\n" > .gitignore
+
+git add .gitignore
+git rm -r --cached .venv
+git rm -r --cached **/__pycache__ 2>NUL
+git commit -m "chore: add .gitignore and untrack venv/__pycache__"
